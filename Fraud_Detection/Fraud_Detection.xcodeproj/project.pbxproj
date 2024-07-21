@@ -14,6 +14,9 @@
 		47258B942C4CED61002D83B9 /* Fraud_DetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47258B932C4CED61002D83B9 /* Fraud_DetectionTests.swift */; };
 		47258B9E2C4CED61002D83B9 /* Fraud_DetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47258B9D2C4CED61002D83B9 /* Fraud_DetectionUITests.swift */; };
 		47258BA02C4CED61002D83B9 /* Fraud_DetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47258B9F2C4CED61002D83B9 /* Fraud_DetectionUITestsLaunchTests.swift */; };
+		47258BAE2C4CFC0E002D83B9 /* TransactionFraudDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47258BAD2C4CFC0E002D83B9 /* TransactionFraudDetector.swift */; };
+		47258BB12C4CFD33002D83B9 /* TransactionFraudDetectionModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 47258BB02C4CFD33002D83B9 /* TransactionFraudDetectionModel.mlpackage */; };
+		47258BB32C4D3BAF002D83B9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47258BB22C4D3BAF002D83B9 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		47258B992C4CED61002D83B9 /* Fraud_DetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fraud_DetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47258B9D2C4CED61002D83B9 /* Fraud_DetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraud_DetectionUITests.swift; sourceTree = "<group>"; };
 		47258B9F2C4CED61002D83B9 /* Fraud_DetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraud_DetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47258BAD2C4CFC0E002D83B9 /* TransactionFraudDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFraudDetector.swift; sourceTree = "<group>"; };
+		47258BB02C4CFD33002D83B9 /* TransactionFraudDetectionModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TransactionFraudDetectionModel.mlpackage; sourceTree = "<group>"; };
+		47258BB22C4D3BAF002D83B9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		47258B762C4CED60002D83B9 = {
 			isa = PBXGroup;
 			children = (
+				47258BAC2C4CFBED002D83B9 /* Resources */,
 				47258B812C4CED60002D83B9 /* Fraud_Detection */,
 				47258B922C4CED61002D83B9 /* Fraud_DetectionTests */,
 				47258B9C2C4CED61002D83B9 /* Fraud_DetectionUITests */,
@@ -94,10 +101,12 @@
 		47258B812C4CED60002D83B9 /* Fraud_Detection */ = {
 			isa = PBXGroup;
 			children = (
+				47258BAD2C4CFC0E002D83B9 /* TransactionFraudDetector.swift */,
 				47258B822C4CED60002D83B9 /* Fraud_DetectionApp.swift */,
 				47258B842C4CED60002D83B9 /* ContentView.swift */,
 				47258B862C4CED61002D83B9 /* Assets.xcassets */,
 				47258B882C4CED61002D83B9 /* Preview Content */,
+				47258BB22C4D3BAF002D83B9 /* ContentViewModel.swift */,
 			);
 			path = Fraud_Detection;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				47258B9F2C4CED61002D83B9 /* Fraud_DetectionUITestsLaunchTests.swift */,
 			);
 			path = Fraud_DetectionUITests;
+			sourceTree = "<group>";
+		};
+		47258BAC2C4CFBED002D83B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47258BAF2C4CFD33002D83B9 /* Models */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47258BAF2C4CFD33002D83B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47258BB02C4CFD33002D83B9 /* TransactionFraudDetectionModel.mlpackage */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47258B852C4CED60002D83B9 /* ContentView.swift in Sources */,
+				47258BAE2C4CFC0E002D83B9 /* TransactionFraudDetector.swift in Sources */,
 				47258B832C4CED60002D83B9 /* Fraud_DetectionApp.swift in Sources */,
+				47258BB12C4CFD33002D83B9 /* TransactionFraudDetectionModel.mlpackage in Sources */,
+				47258BB32C4D3BAF002D83B9 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
